@@ -1,0 +1,21 @@
+[package]
+name = "wechat-sticker-dingtalk"
+version = "0.1.0"
+authors = ["sound2gd <429354772@qq.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+# actix-web = { version="2.0.0", features=["openssl"] }
+actix-web = { version="2.0.0", features=["rustls"] }
+actix-rt = "1"
+serde = { version = "^1.0", features = ["derive"] }
+serde_derive = "1.0.90"
+serde-xml-rs = "0.4.0"
+futures = "0.3.4"
+
+log = "0.4"
+env_logger = "0.6.2"
+bytes="0.5.4"
+lazy_static = "1.4.0"
